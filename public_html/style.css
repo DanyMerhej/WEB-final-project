@@ -3,3 +3,140 @@
     Author     : DANNY
 */
 
+*{
+    color:white;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    background: linear-gradient(white, #1A0315 , #88D317 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+#container{
+    position:relative;
+    width:1000px;
+    height:1300px;
+    margin:auto;
+    border:solid black 0px;
+    background:url("background.jpg") left top;
+    border-radius: 15px;
+}
+
+#container background{
+    width:1000px;
+}
+
+#menu{
+    text-align: right;
+    width:1000px;
+    background-color: #1A0315;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    
+}
+
+
+
+#menu ul li{
+    
+    text-align: center;
+    width:150px;
+    height:25px;
+    background-color: #88D317;
+    display:inline-block;
+    padding: 5px;
+    color:#1A0315;
+}
+
+#menu ul li:last-child{
+    border-top-right-radius: 15px;
+    background-color: #1A0315;
+    color:white;
+}
+
+#logo{
+    position:relative;
+    width:52px;
+    height:52px;
+    left:10px;
+    top:-7px;
+}
+
+#profile{
+    position:relative;
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    border:solid #88D317 4px;
+    margin:auto;
+}
+
+#profilediv{
+    position:relative;
+    width:200px;
+    height:200px;
+    margin:auto;
+
+}
+#textdiv{
+    position:relative;
+    width:900px;
+    height:150px;
+    margin:auto;
+    text-align: center;
+    border-radius: 15px;
+    border-bottom: solid #88D317 4px;
+    display: block; 
+}
+
+#textdiv p{
+    font-size: 50px;
+}
+
+#text1 {
+    font-weight: bold;
+}
+
+
+#textdiv p:last-child{
+    position: relative;
+    font-size: 30px;
+    top:-30px;
+}
+
+#quotediv{
+    position:relative;
+    width:600px;
+    height:560px;
+    margin:auto;
+    text-align: center;
+    margin-top:100px;
+    border:dashed #88D317 2px;
+    border-radius: 20px;
+    border-style: outset;
+    background-color: #1A0315;
+}
+
+#quotediv #p1, #p3, #p5, #p7{
+    font-size: 70px;
+    
+}
+
+#quotediv #p2, #p4, #p6{
+    position: relative;
+     font-size: 40px;
+}
+
+#quotediv #p3, #p5{
+    font-weight: bold;
+    color:#88D317;
+}
+
+#quotediv p{
+    line-height: 0px;
+}
+
