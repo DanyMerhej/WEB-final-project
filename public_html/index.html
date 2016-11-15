@@ -2,47 +2,101 @@
 
 <html>
     <head>
-        <title>version 1.2</title>
+        <title>version 1.3</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="js.js" type="text/javascript">
+
     </head>
     <body>
         <div id="container">
 
             <div id="menu">
+
+                <p><a href="index.html">DANNY MERHEJ</a></p>
+
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="studies.html">STUDIES</a></li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="contactme.html" id="contactme">CONTACT ME</a></li>
+                    <li><a href="contact.html">ABOUT</a></li>
+                    <li><a href="contactme.html">CONTACT</a></li>
                 </ul>
+
+
             </div>
 
-            <p id="quoteoftheday">QUOTE Of The Day</p>
-            <pre class="quote">
-        ALL ROADS  
-       That lead to
-          SUCCESS
-   Have to pass through
-        HARD WORK
-          Boulevard
-      AT SOME POINT
-            </pre>
-            <img src="logo.png" alt="MD LOGO" id="logo">
-
-            <div id="profilediv">
-                <img src="profile.jpg" alt="profile picture" id="profile">
-            </div>
-            <div id="textdiv">
-                <p class="text1"><span>DANNY</span> <span>MERHEJ</span></p>
-                <p class="text2">Web Developer <span>|</span> Computer Scientist <span>|</span> User Interface Designer</p>
+            <div id="profile">
+                <div id="profile1">
+                    <img src="profile.jpg" alt="Profile pic" id="profilepic">
+                </div>
+                <div id="profile2">
+                    <p id="profiletext">DANNY MERHEJ</p>
+                    <hr id="hr">
+                    <p id="profiletext1">Computer Scientist - Web Developer - Photographer</p>
+                </div>  
             </div>
 
+            <div id="portfolio">
+                <p id="portfolioheader">PORTFOLIO</p>
+                <hr id="hr1">
+                <nav id="projects">
+                    <a href="#" class="projects"><img src="profile.jpg" alt=""></a>
+                    <a href="#" class="projects"><img src="profile.jpg" alt=""></a>
+                    <a href="#" class="projects"><img src="profile.jpg" alt=""></a>
+                    <a href="#" class="projects"><img src="profile.jpg" alt=""></a>                    
+                </nav>
+            </div>
 
+            <div id="about">
+                <p id="aboutheader">ABOUT</p>
+                <hr id="hr2">
+                <p id="aboutme">
+                    Description , Description , Description , Description , Description ,
+                    Description , Description , Description , Description , Description ,
+                    Description , Description , Description , Description , Description ,
+                    Description , Description , Description , Description , Description ,
+                    Description , Description , Description , Description , Description ,
+                    Description , Description , Description , Description , Description ,
+                    Description , Description , Description , Description , Description ,
+                </p>
+            </div>
+
+            <div id="contactme">
+                <p id="contactmeheader">CONTACT</p>
+                <hr id="hr3">
+
+                <div id="contactformdiv">
+                    <form name="sentMessage" id="contactform">
+
+                        <div class="inputdiv">
+                            <label>Name</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="inputdiv">
+                            <label>Email</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="inputdiv">
+                            <label>Phone number</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="inputdiv">
+                            <label>Message</label>
+                            <textarea></textarea>>
+                        </div>
+                        <br>
+
+
+                        <button type="submit">Send</button>
+
+                    </form>
+                </div>
+
+            </div>
 
         </div>
     </body>
