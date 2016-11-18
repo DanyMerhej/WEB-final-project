@@ -22,6 +22,7 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
+    
 }
 
 #container{
@@ -76,6 +77,7 @@ body{
 #menu ul li a{
     text-decoration: none;
     font-size: 15px;
+    -webkit-transition: all 0.5s ease;
 }
 
 #menu ul li a:hover{
@@ -311,8 +313,9 @@ body{
     border-radius: 8px;
     border-left:none;
     border-right:none;
+    border-top: none;
     outline: none;
-    
+
 }
 .inputdiv>textArea{
     width:800px;
@@ -324,8 +327,9 @@ body{
     border-radius: 8px;
     border-left:none;
     border-right:none;
+    border-top: none;
     outline: none;
-    
+
 }
 
 .inputdiv>label{
@@ -349,6 +353,10 @@ body{
     outline: none;
 }
 
+#textarea{
+    resize: none;
+}
+
 
 #contactform button:hover{
     background-color: #169B81;
@@ -360,3 +368,235 @@ body{
     color:#2C3E50;
 
 }
+
+#footer{
+    position:relative;
+    width:100%;
+    height:500px;
+    background-color: #2C3E50;
+    margin:0px;
+    padding:0px;
+    margin-top: 0px;;
+
+
+}
+
+#location{
+    position:relative;
+    width:33%;
+    height:500px;
+    background-color: #2C3E50;
+    margin:0px;
+    padding:0px;
+    margin-top: 0px;;
+    float: left;
+    margin: auto;
+}
+
+
+#location p{
+    position:relative;
+    width:33%;
+    background-color: #2C3E50;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#location>div{
+    position:relative;
+    background-color: #2C3E50;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    width:300px;
+    height: 300px;
+}
+
+#location>#map{
+    width:300px;
+    height:300px;
+}
+
+
+#web{
+    margin:0px;
+    position:relative;
+    width:33%;
+    height:500px;
+    background-color: #2C3E50;
+    margin:auto;
+    padding:0px;
+    margin-top: 0px;;
+    float: left;
+    margin: auto;
+
+    display:inline;
+    text-align: center;
+}
+
+#web p{
+    position:relative;
+    width:100%;
+    background-color: #2C3E50;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#webdiv{
+    width:33%;
+    margin:auto;
+    margin-top: 40px;
+    display: inline;
+}
+
+#web ul{
+    position:relative;
+    background-color: #2C3E50;
+    margin-top: 50px;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    display:inline;
+    width:33%;
+    padding: 0px;
+
+}
+
+#web ul li{
+    position:relative;
+    background-color: #2C3E50;
+    width:100%;
+    margin-top: 50px;
+    margin: auto;    
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0px;
+    list-style: none;
+
+}
+
+#web ul li a{
+    position:relative;
+    transition: background-color 0.5s ease;
+    width:200px;
+    margin-top: 0px;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline;
+    border:solid white 1px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+#web ul li a:hover{
+
+    color:#18BC9C;
+    background-color: white;
+
+}
+
+
+#cv{
+    margin:0px;
+    position:relative;
+    width:33%;
+    height:500px;
+    background-color: #2C3E50;
+    margin:0px;
+    padding:0px;
+    margin-top: 0px;;
+    float: right;
+    margin: auto;
+
+}
+
+#cv p{
+    position:relative;
+    width:200px;;
+    background-color: #2C3E50;
+    margin-top: 0px;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#tablefooter{
+
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 15px;
+    text-align: left;
+    width:300px;
+
+}
+
+#tablefooter tr{
+    height: 70px;
+
+}
+
+#web ul{
+    position:relative;
+    background-color: #2C3E50;
+    margin-top: 50px;
+    text-align: center;
+    margin-top: 40px;
+    width:200px;
+    padding: 0px;
+
+}
+
+#cv ul li{
+    position:relative;
+    background-color: #2C3E50;
+    width:100%;
+
+
+    text-align: center;
+
+    padding: 0px;
+    list-style: none;
+    margin: auto;
+    margin-left: -20px;
+}
+
+#cv ul li a{
+    position:relative;
+    transition: background-color 0.5s ease;
+    width:200px;
+    margin-top: 0px;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px;
+    text-decoration: none;
+
+    border:solid white 1px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+#cv ul li a:hover{
+    color:#18BC9C;
+    background-color: white;
+}
+
+
+
+
+
+
