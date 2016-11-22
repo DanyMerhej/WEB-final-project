@@ -7,12 +7,15 @@ html, body {
     margin:0px;
     padding:0;
     margin-top: -15px;
+    min-width: 750px;
+    min-height: 576px;
 }
 
 *{
     color:white;
     font-size: 15px;
     font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -22,7 +25,7 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
-    
+
 }
 
 #container{
@@ -30,7 +33,7 @@ body{
     margin:0px;
     padding:0px;
     position: relative;
-    height: 100vh;
+    height: 100%;
 }
 
 #menu{
@@ -124,7 +127,7 @@ body{
 
 #profiletext{
     width:100%;
-    height:250px;
+    height:20%;
     position: relative;
     margin:auto;
     text-align: center;
@@ -135,7 +138,7 @@ body{
 
 #hr{
     position:relative;
-    margin-top:-150px;
+    top:20px;
     border:solid white 2px;
     width:200px;
 }
@@ -166,7 +169,8 @@ body{
 
 #profiletext1{
     width:100%;
-    height:50px;
+    height:20%;
+    top:0px;
     position: relative;
     margin:auto;
     text-align: center;
@@ -207,12 +211,41 @@ body{
 
 #projects .projects{
     margin:10px;
+
 }
 
-#projects img{
-    height:300px;
-    width:300px;
+.projects-div{
+    display:inline-block;
+    position: relative;
+    height:250px;
+    width:20%;
+    border:solid white 1px;
+    margin: auto;
+    background-color: #18BC9C;
+    transition: background-color 0.5s ease;
 }
+
+.imgpr:hover{
+
+    background-color:#2C3E50;
+    opacity:0;
+}
+
+
+
+#projects .imgpr{
+    position: relative;
+    width:100%;
+    height: 100%;
+    border-radius: 100%;
+    margin: auto;
+ -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
 
 
 #about{
@@ -396,7 +429,7 @@ body{
 
 #location p{
     position:relative;
-    width:33%;
+    width:100%;
     background-color: #2C3E50;
     margin: auto;
     font-size: 30px;
@@ -411,14 +444,12 @@ body{
     font-size: 30px;
     text-align: center;
     margin-top: 30px;
-    width:300px;
-    height: 300px;
+    width:70%;
+    height: 70%;
+
 }
 
-#location>#map{
-    width:300px;
-    height:300px;
-}
+
 
 
 #web{
@@ -432,7 +463,6 @@ body{
     margin-top: 0px;;
     float: left;
     margin: auto;
-
     display:inline;
     text-align: center;
 }
@@ -448,7 +478,7 @@ body{
 }
 
 #webdiv{
-    width:33%;
+    width:100%;
     margin:auto;
     margin-top: 40px;
     display: inline;
@@ -463,7 +493,7 @@ body{
     text-align: center;
     margin-top: 40px;
     display:inline;
-    width:33%;
+    width:100%;
     padding: 0px;
 
 }
@@ -485,7 +515,7 @@ body{
 #web ul li a{
     position:relative;
     transition: background-color 0.5s ease;
-    width:200px;
+    width:50%;
     margin-top: 0px;
     margin: auto;
     font-size: 20px;
@@ -523,7 +553,7 @@ body{
 
 #cv p{
     position:relative;
-    width:200px;;
+    width:100%;;
     background-color: #2C3E50;
     margin-top: 0px;
     margin: auto;
@@ -539,7 +569,7 @@ body{
     margin-top: 40px;
     font-size: 15px;
     text-align: left;
-    width:300px;
+    width:100%;
 
 }
 
@@ -554,7 +584,7 @@ body{
     margin-top: 50px;
     text-align: center;
     margin-top: 40px;
-    width:200px;
+    width:100%;
     padding: 0px;
 
 }
@@ -563,20 +593,17 @@ body{
     position:relative;
     background-color: #2C3E50;
     width:100%;
-
-
     text-align: center;
-
     padding: 0px;
     list-style: none;
     margin: auto;
-    margin-left: -20px;
+    left:-15px;
 }
 
 #cv ul li a{
     position:relative;
     transition: background-color 0.5s ease;
-    width:200px;
+    width:33%;
     margin-top: 0px;
     margin: auto;
     font-size: 20px;
@@ -584,7 +611,6 @@ body{
     margin-top: 0px;
     padding: 10px;
     text-decoration: none;
-
     border:solid white 1px;
     border-radius: 15px;
     display: inline-block;
@@ -597,6 +623,139 @@ body{
 
 
 
+#copyright{
+    position:relative;
+    width:100%;
+    height:20px;
+    background-color: white;
+    margin:0px;
+    padding:0px;
+    text-align: center;
+    color:black;
+}
 
+#copyright>p{
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    background-color: white;
+}
+
+
+
+
+/*
+projects pages (classes)
+*/
+
+body{
+    background-color: white;
+}
+
+.main{
+    position: relative;
+    height:100%;
+    width:100%;
+    margin:0px;
+    top:0px;
+    padding: 60px;
+    text-align: center;
+}
+
+#main-div{
+
+    width:80%;
+    height:70%;
+    top:0px;
+    border:solid #18BC9C 2px;
+    border-radius: 30px;
+    position: relative;
+    margin: auto;
+    background-color: #18BC9C;
+
+}
+
+
+.main-pic{
+    width:70%;
+    height:80%;
+    border:solid white 2px;
+    position: relative;
+    margin: auto;
+    top:10%;
+}
+
+#main-head{
+    font-size:50px;
+    font-weight: bold;
+    position: relative;
+    top:0px;
+}
+
+.main-desc{
+    font-size:20px;
+    color:black;
+    position: relative;
+    top:20px;
+    margin-bottom: 50px;
+
+}
+
+#main-deleteSign{
+    position: absolute;
+    top:50px;
+    right: 40px;
+    width:50px;
+    height:50px;
+}
+
+
+#close-button{
+    position: relative;
+    margin: auto;
+    color: black;
+    margin-bottom: 60px;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+    width:100px;
+    height:50px;
+    transition: background-color 0.5s ease;
+}
+
+#close-button:hover{
+
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+#close-button:active{
+
+    background-color: white;
+    cursor: pointer;
+}
+
+#close-button>span{
+
+    color: black;
+    font-weight: bold;
+}
+
+#createdby{
+    font-size:15px;
+    color:black;
+    position: relative;
+    top:20px;
+    margin-bottom: 50px;
+}
+
+
+#createdby>span{
+    font-size:15px;
+    color:#18BC9C;
+    position: relative;
+    top:0px;
+
+}
 
 
