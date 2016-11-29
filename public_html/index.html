@@ -2,27 +2,26 @@
 
 <html>
     <head>
-        <title>version 1.5</title>
+        <title>version 1.6</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="jquery-3.1.1.min.js"></script>
         <script src="js.js"></script>
-
-
 
     </head>
     <body>
-        <div id="container">
+        <div id="container" class="hidden" name="container">
 
-            <div id="menu">
+            <div id="menu" class="large">
 
-                <p><a href="index.html">DANNY MERHEJ</a></p>
+                <p><a href="#container" class="largep">DANNY MERHEJ</a></p>
 
                 <ul>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contactme">CONTACT</a></li>
+                    <li class="largeli"><a href="#portfolio" id="portfoliobutton">PORTFOLIO</a></li>
+                    <li class="largeli"><a href="#about" id="aboutbutton">ABOUT</a></li>
+                    <li class="largeli"><a href="#contactme" id="contactmebutton">CONTACT</a></li>
                 </ul>
 
 
@@ -30,7 +29,7 @@
 
             <div id="profile">
                 <div id="profile1">
-                    <img src="pics/profilePic.jpg" alt="Profile pic" id="profilepic">
+                    <img src="pics/profile.jpg" alt="Profile pic" id="profilepic">
                 </div>
                 <div id="profile2">
                     <p id="profiletext">DANNY MERHEJ</p>
@@ -39,14 +38,34 @@
                 </div>  
             </div>
 
-            <div id="portfolio" name="portfolio">
+            <div id="portfolio" name="portfolio"> 
                 <p id="portfolioheader">PORTFOLIO</p>
                 <hr id="hr1">
                 <div id="projects">
-                    <a href="htmlPages/storeManagment.html" class="projects"><div class="projects-div"><img src="pics/storeManagment.png" alt="" class="imgpr"></div></a>
-                    <a href="htmlPages/keyLogger.html" class="projects"><div class="projects-div"><img src="pics/keyLogger.png" alt="" class="imgpr"></div></a>
-                    <a href="htmlPages/folderLocker.html" class="projects"><div class="projects-div"><img src="pics/folderLocker.png" alt="" class="imgpr"></div></a>
-                    <a href="htmlPages/" class="projects"><div class="projects-div"><img src="pics/profile.jpg" alt="" class="imgpr"></div></a>                    
+                    <a href="htmlPages/storeManagment.html" class="projects">
+                        <div class="projects-div">
+                            <img src="pics/projects.png" alt="" class="imgpr">
+                            <p class="ppr">POS SYSTEM</p>
+                        </div>
+                    </a>
+                    <a href="htmlPages/keyLogger.html" class="projects">
+                        <div class="projects-div">
+                            <img src="pics/projects.png" alt="" class="imgpr">
+                            <p class="ppr">KEY LOGGER</p>
+                        </div>
+                    </a>
+                    <a href="htmlPages/folderLocker.html" class="projects">
+                        <div class="projects-div">
+                            <img src="pics/projects.png" alt="" class="imgpr">
+                            <p class="ppr">FOLDER LOCKER</p>
+                        </div>
+                    </a>
+                    <a href="htmlPages/game.html" class="projects">
+                        <div class="projects-div">
+                            <img src="pics/projects.png" alt="" class="imgpr">
+                            <p class="ppr">SNAKE GAME</p>
+                        </div>
+                    </a>                    
                 </div>
             </div>
 
@@ -55,7 +74,7 @@
                 <hr id="hr2">
                 <p id="aboutme">
                     Hi i'm Danny, and i'm a computer scientist.<br>
-                    I have studied in the Lebanese Canadian University Aintoura campus.<br>
+                    I have studied Computer Science in the Lebanese Canadian University Aintoura campus.<br>
                     And achieved my license degree in 2017.<br>
                     I do free lancing for living, and my main focus is web developing.<br>
                     I'm passionate about photography, technology and sports.<br>
@@ -104,7 +123,7 @@
                 <div id="location">
                     <p>LOCATION</p>
                     <div id="map">
-                        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPFkL-n1O8zP0l4pEkcfyT4omZ6o3PSeY&callback=myMap"></script>
                     </div>
                 </div>
 
@@ -113,19 +132,19 @@
                     <div id="webdiv">
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/danny.merhej.5" class="socialbutton" target="_blank">Facebook</a>
+                                <a href="https://www.facebook.com/danny.merhej.5"  target="_blank">Facebook</a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/danny_merhej/" class="socialbutton" target="_blank">Instagram</a>
+                                <a href="https://www.instagram.com/danny_merhej/"  target="_blank">Instagram</a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/Danny_Merhej" class="socialbutton" target="_blank">Twitter</a>
+                                <a href="https://twitter.com/Danny_Merhej"  target="_blank">Twitter</a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/danny-merhej-74b6a4120?trk=nav_responsive_tab_profile" class="socialbutton" target="_blank">Linkedin</a>
+                                <a href="https://www.linkedin.com/in/danny-merhej-74b6a4120?trk=nav_responsive_tab_profile"  target="_blank">Linkedin</a>
                             </li>
                             <li>
-                                <a href="https://github.com/DanyMerhej" class="socialbutton" target="_blank">Github</a>
+                                <a href="https://github.com/DanyMerhej" target="_blank">Github</a>
                             </li>
                         </ul>
                     </div>
@@ -156,7 +175,7 @@
             <div id="copyright">
                 <p>Copyright &copy; 2016 DANNY MERHEJ</p>
             </div>
-
+            
         </div>
     </body>
 </html>
