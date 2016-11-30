@@ -9,11 +9,118 @@ and open the template in the editor.
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link href="../style2.css" type="text/css" rel="stylesheet">
+
         <script src="../jquery-3.1.1.min.js"></script>
         <script src="../js2.js"></script>
     </head>
     <body>
-       
+
+        <h1>HIT IT !</h1>
+        <h3>How many boxes can you check?</h3>
+        <a href="../index.html#portfolio"><img src="../pics/deleteSign.png" alt="" id="main-deleteSign"></a>
+        <form name="formtable1">
+
+            <table>
+                <tr>
+                    <td><input type="text" name="state" size="20" value="Push Start to Play" id="text1" onFocus="this.blur()"></td>
+                    <td><pre>    </pre></td>
+                    <td>Time:</td>
+                    <td><input type="text" name="timeleft" size="4" onFocus="this.blur()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="startstop" value=" Start Game | Stop Game " onClick="play()"></td>
+                    <td><pre>    </pre></td>
+                    <td>Score:</td>
+                    <td><input type="text" name="score" size="4" onFocus="this.blur()"></td>
+                </tr>
+            </table>
+
+        </form>
+        <form name="formtable2">
+
+            <table>
+                <tr>
+                    <td colspan=10></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" onClick="hitradio(0)"></td>
+                    <td><input type="radio" onClick="hitradio(1)"></td>
+                    <td><input type="radio" onClick="hitradio(2)"></td>
+                    <td><input type="radio" onClick="hitradio(3)"></td>
+                    <td><input type="radio" onClick="hitradio(4)"></td>
+                    <td><input type="radio" onClick="hitradio(5)"></td>
+                    <td><input type="radio" onClick="hitradio(6)"></td>
+                    <td><input type="radio" onClick="hitradio(7)"></td>
+                    <td><input type="radio" onClick="hitradio(8)"></td>
+                    <td><input type="radio" onClick="hitradio(9)"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="radio" onClick="hitradio(10)"></td>
+                    <td><input type="radio" onClick="hitradio(11)"></td>
+                    <td><input type="radio" onClick="hitradio(12)"></td>
+                    <td><input type="radio" onClick="hitradio(13)"></td>
+                    <td><input type="radio" onClick="hitradio(14)"></td>
+                    <td><input type="radio" onClick="hitradio(15)"></td>
+                    <td><input type="radio" onClick="hitradio(16)"></td>
+                    <td><input type="radio" onClick="hitradio(17)"></td>
+                    <td><input type="radio" onClick="hitradio(18)"></td>
+                    <td><input type="radio" onClick="hitradio(19)"></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" onClick="hitradio(20)"></td>
+                    <td><input type="radio" onClick="hitradio(21)"></td>
+                    <td><input type="radio" onClick="hitradio(22)"></td>
+                    <td><input type="radio" onClick="hitradio(23)"></td>
+                    <td><input type="radio" onClick="hitradio(24)"></td>
+                    <td><input type="radio" onClick="hitradio(25)"></td>
+                    <td><input type="radio" onClick="hitradio(26)"></td>
+                    <td><input type="radio" onClick="hitradio(27)"></td>
+                    <td><input type="radio" onClick="hitradio(28)"></td>
+                    <td><input type="radio" onClick="hitradio(29)"></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" onClick="hitradio(30)"></td>
+                    <td><input type="radio" onClick="hitradio(31)"></td>
+                    <td><input type="radio" onClick="hitradio(32)"></td>
+                    <td><input type="radio" onClick="hitradio(33)"></td>
+                    <td><input type="radio" onClick="hitradio(34)"></td>
+                    <td><input type="radio" onClick="hitradio(35)"></td>
+                    <td><input type="radio" onClick="hitradio(36)"></td>
+                    <td><input type="radio" onClick="hitradio(37)"></td>
+                    <td><input type="radio" onClick="hitradio(38)"></td>
+                    <td><input type="radio" onClick="hitradio(39)"></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" onClick="hitradio(40)"></td>
+                    <td><input type="radio" onClick="hitradio(41)"></td>
+                    <td><input type="radio" onClick="hitradio(42)"></td>
+                    <td><input type="radio" onClick="hitradio(43)"></td>
+                    <td><input type="radio" onClick="hitradio(44)"></td>
+                    <td><input type="radio" onClick="hitradio(45)"></td>
+                    <td><input type="radio" onClick="hitradio(46)"></td>
+                    <td><input type="radio" onClick="hitradio(47)"></td>
+                    <td><input type="radio" onClick="hitradio(48)"></td>
+                    <td><input type="radio" onClick="hitradio(49)"></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" onClick="hitradio(50)"></td>
+                    <td><input type="radio" onClick="hitradio(51)"></td>
+                    <td><input type="radio" onClick="hitradio(52)"></td>
+                    <td><input type="radio" onClick="hitradio(53)"></td>
+                    <td><input type="radio" onClick="hitradio(54)"></td>
+                    <td><input type="radio" onClick="hitradio(55)"></td>
+                    <td><input type="radio" onClick="hitradio(56)"></td>
+                    <td><input type="radio" onClick="hitradio(57)"></td>
+                    <td><input type="radio" onClick="hitradio(58)"></td>
+                    <td><input type="radio" onClick="hitradio(59)"></td>
+                </tr>
+                <tr><td colspan=10></td>
+                </tr>
+            </table>
+        </form>
+        <p>Copyright &copy; 2016 DANNY MERHEJ</p>
     </body>
 </html>

@@ -1,0 +1,79 @@
+*{
+
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #18BC9C;
+}
+
+input[type=radio]{
+    width:30px;
+    height:30px;
+    cursor: pointer;
+  
+    
+}
+input[type=button]{
+    width:270px;
+    height:40px;
+    background-color: #2C3E50;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type=text]{
+    width:270px;
+    height:40px;
+    background-color: #18BC9C;
+    font-size: 20px;
+    text-align: center;
+    color:#2C3E50;
+    cursor:default;
+}
+
+
+#text1{
+    width:270px;
+    height:40px;
+    background-color: #18BC9C;
+    font-size: 20px;
+    text-align: center;
+    border:0px;
+}
+
+
+table{
+
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+
+}
+
+h1,h3{
+    position: relative;
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+td{
+    padding: 10px;
+
+}
+p{
+
+    text-align: center;
+}
+
+#main-deleteSign{
+    position: absolute;
+    width:50px;
+    height:50px;
+    right:30px;
+    top:30px;
+}
