@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>version 1.7</title>
+        <title>MD</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -11,7 +11,7 @@
         <script src="js.js"></script>
 
     </head>
-    <body>
+    <body onload="changeQuote()">
         <div id="container" class="hidden" name="container">
 
             <div id="menu" class="large">
@@ -21,6 +21,7 @@
                 <ul>
                     <li class="largeli"><a href="#portfolio" id="portfoliobutton">PORTFOLIO</a></li>
                     <li class="largeli"><a href="#about" id="aboutbutton">ABOUT</a></li>
+                    <li class="largeli"><a href="#Cv" id="cvbutton">CV</a></li>
                     <li class="largeli"><a href="#contactme" id="contactmebutton">CONTACT</a></li>
                 </ul>
 
@@ -28,7 +29,38 @@
             </div>
 
             <div id="profile">
+                <div id="quotediv">
+                    <p id="quotep"></p>
+
+
+                    <script>
+                        var text = '{"quote1":"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you havent found it yet, keep looking. Dont settle. As with all matters of the heart, youll know when you find it.","quote2":"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.","quote3":"Follow your passion, be prepared to work hard and sacrifice, and, above all, dont let anyone limit your dreams."}';
+
+                        var obj = JSON.parse(text);
+
+                        var interval = window.setInterval(changeQuote, 10000);
+                        function changeQuote() {
+                            var rnd = Math.random();
+                            if (rnd < 0.33) {
+                                document.getElementById("quotep").innerHTML =
+                                        obj.quote1;
+                            }
+                            else if (rnd < 0.67) {
+                                document.getElementById("quotep").innerHTML =
+                                        obj.quote2;
+                            }
+                            else {
+                                document.getElementById("quotep").innerHTML =
+                                        obj.quote3;
+                            }
+
+                        }
+                    </script>
+
+
+                </div>
                 <div id="profile1">
+
                     <img src="pics/profile.jpg" alt="Profile pic" id="profilepic">
                 </div>
                 <div id="profile2">
@@ -40,7 +72,7 @@
 
             <div id="portfolio" name="portfolio"> 
                 <p id="portfolioheader">PORTFOLIO</p>
-                <hr id="hr1">
+                <hr class="hr1">
                 <div id="projects">
                     <a href="htmlPages/storeManagment.html" class="projects">
                         <div class="projects-div">
@@ -71,7 +103,7 @@
 
             <div id="about" name="about">
                 <p id="aboutheader">ABOUT</p>
-                <hr id="hr2">
+                <hr class="hr2">
                 <p id="aboutme">
                     Hi i'm Danny, and i'm a computer scientist.<br>
                     I have studied Computer Science in the Lebanese Canadian University Aintoura campus.<br>
@@ -82,9 +114,65 @@
                 </p>
             </div>
 
+
+            <div id="Cv" name="Cv">
+                <p id="cvheader">MY CV</p>
+                <hr class="hr2">
+                <table id="cvtable">
+                    <tr class="tableheader">
+                        <td colspan="2">WORK EXPERIENCE</td>
+                        <td colspan="2">EDUCATION</td>
+                    </tr>
+
+                    <tr class="trs">
+                        <td class="trsfirst">Web Developer</td>
+                        <td>2012 - 2016</td>
+                        <td class="trsfirst" rowspan="2">Computer Science (LCU)</td>
+                        <td rowspan="2">2014 - 2016</td>
+                    </tr>
+                    <tr class="trs">
+                        <td class="trsfirst">Private tutor</td>
+                        <td>2014 - 2016</td>
+
+                    </tr>
+                    <tr class="trs">
+                        <td class="trsfirst">Photographer</td>
+                        <td>2013 - 2014</td>
+                        <td class="trsfirst" rowspan="2">(SE) school Charité ZOUK</td>
+                        <td rowspan="2">2010 - 2014</td>
+                    </tr>
+                    <tr class="trs">
+                        <td class="trsfirst">IT Solutions At BESTSELLER</td>
+                        <td>2014 - 2016</td>
+
+                    </tr>
+                    <tr class="tableheader">
+                        <td colspan="2">SKILLS</td>
+                    </tr>
+                    <tr class="trs">
+                        <td>Vb.net</td>
+                        <td>c++</td>
+                    </tr>
+                    <tr class="trs">
+                        <td>Java</td>
+                        <td>Swift</td>
+                    </tr>
+                    <tr class="trs">
+                        <td>SQL</td>
+                        <td>HTML5</td>
+                    </tr>
+                    <tr class="trs">
+                        <td>PHP</td>
+                        <td>JavaScript</td>
+                    </tr>
+
+                </table>
+            </div>
+
+
             <div id="contactme" name="contactme">
                 <p id="contactmeheader">CONTACT</p>
-                <hr id="hr3">
+                <hr class="hr1">
 
                 <div id="contactformdiv">
                     <form name="sentMessage" id="contactform">
@@ -106,14 +194,14 @@
 
                         <div class="inputdiv">
                             <label>Message</label>
-                            <textarea id="textarea"></textarea>>
+                            <textarea id="textarea"></textarea>
 
                         </div>
-                        <br>
+                        <br><br>
 
 
                         <button onClick="alert('Message Successfully Submitted')">Send</button>
-                        
+
                     </form>
                 </div>
 
