@@ -15,11 +15,11 @@
         <div id="container" class="hidden" name="container">
 
             <div id="menu" class="large">
-
+                <img src="pics/logo.png" id="logo">
                 <p><a href="#container" class="largep">DANNY MERHEJ</a></p>
 
-                <ul>
-                    <li class="largeli"><a href="#portfolio" id="portfoliobutton">PORTFOLIO</a></li>
+                <ul ID="ulmenu">
+                    <li class="largeli" id="li1"><a href="#portfolio" id="portfoliobutton">PORTFOLIO</a></li>
                     <li class="largeli"><a href="#about" id="aboutbutton">ABOUT</a></li>
                     <li class="largeli"><a href="#Cv" id="cvbutton">CV</a></li>
                     <li class="largeli"><a href="#contactme" id="contactmebutton">CONTACT</a></li>
@@ -49,10 +49,12 @@
                                 document.getElementById("quotep").innerHTML =
                                         obj.quote2;
                             }
+
                             else {
                                 document.getElementById("quotep").innerHTML =
                                         obj.quote3;
                             }
+
 
                         }
                     </script>
@@ -89,7 +91,7 @@
                     <a href="htmlPages/folderLocker.html" class="projects">
                         <div class="projects-div">
                             <img src="pics/projects.png" alt="" class="imgpr">
-                            <p class="ppr">FOLDER LOCKER</p>
+                            <p class="ppr">F-LOCKER</p>
                         </div>
                     </a>
                     <a href="htmlPages/game.html" class="projects">
@@ -122,49 +124,49 @@
                     <tr class="tableheader">
                         <td colspan="2">WORK EXPERIENCE</td>
                         <td colspan="2">EDUCATION</td>
+                        <td colspan="2">SKILLS</td>
                     </tr>
 
                     <tr class="trs">
                         <td class="trsfirst">Web Developer</td>
                         <td>2012 - 2016</td>
                         <td class="trsfirst" rowspan="2">Computer Science (LCU)</td>
-                        <td rowspan="2">2014 - 2016</td>
+                        <td rowspan="2">2014 - 2017</td>
+                        <td>HTML5</td>
+                        <td>JavaScript</td>
                     </tr>
                     <tr class="trs">
                         <td class="trsfirst">Private tutor</td>
                         <td>2014 - 2016</td>
-
+                        <td>Java</td>
+                        <td>C++</td>
                     </tr>
                     <tr class="trs">
                         <td class="trsfirst">Photographer</td>
                         <td>2013 - 2014</td>
                         <td class="trsfirst" rowspan="2">(SE) school Charité ZOUK</td>
                         <td rowspan="2">2010 - 2014</td>
+                        <td>Swift</td>
+                        <td>SQL</td>
                     </tr>
                     <tr class="trs">
                         <td class="trsfirst">IT Solutions At BESTSELLER</td>
                         <td>2014 - 2016</td>
-
-                    </tr>
-                    <tr class="tableheader">
-                        <td colspan="2">SKILLS</td>
-                    </tr>
-                    <tr class="trs">
-                        <td>Vb.net</td>
-                        <td>c++</td>
-                    </tr>
-                    <tr class="trs">
-                        <td>Java</td>
-                        <td>Swift</td>
-                    </tr>
-                    <tr class="trs">
-                        <td>SQL</td>
-                        <td>HTML5</td>
-                    </tr>
-                    <tr class="trs">
                         <td>PHP</td>
-                        <td>JavaScript</td>
+                        <td>Vb.NET</td>
                     </tr>
+                    <tr class="trs">
+                        <td></td>
+                    <td></td>
+                    <td colspan="2">
+                        
+                        <a  href="danymerhejCV.pdf" target="_blank"><input type="button" value="VIEW FULL CV" id="fullcvbutton"></a>
+                           
+                    </td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+
 
                 </table>
             </div>
@@ -250,14 +252,22 @@
                             <td>Phone Number :</td>
                             <td>+961 71 60 49 30</td>
                         </tr>
+                        <tr>
+                            <td>Fax :</td>
+                            <td>+961 04 70 77 21</td>
+                        </tr>
+                        <tr>
+                            <td>Address :</td>
+                            <td>Dbayeh - Zouk el kharab</td>
+                        </tr>
+                        <tr>
+                            <td>Google Maps :</td>
+                            <td>33.944930899999996 , 35.5983198</td>
+                        </tr>
                     </table>
 
-                    <P>CV</P>
-                    <ul>
-                        <li>
-                            <a href="danymerhejCV.pdf" target="_blank">VIEW CV</a>
-                        </li>
-                    </ul>
+                   
+                    
                 </div>
             </div>
             <div id="copyright">
